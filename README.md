@@ -81,7 +81,7 @@ To Be Implemented.
 * The auto-hetero-directed troll inside me, getting out of my hands.
 
 ### Licensing
-This work is licensed under [WTFNMFPL-1.0](http://www.adversary.org/wp/2013/10/14/do-what-the-fuck-you-want-but-its-not-my-fault/). Full text of the licence can be found also here. If you are illiterate [there is a summary with colorful symbols](https://tldrlegal.com/license/do-what-the-fuck-you-want-to-but-it%27s-not-my-fault-public-license-v1-(wtfnmfpl-1.0)).
+This work is licensed under [WTFNMFPL-1.0](http://www.adversary.org/wp/2013/10/14/do-what-the-fuck-you-want-but-its-not-my-fault/). Full text of the licence can be found also [here](https://github.com/ramabile/latex-against-humanity/blob/master/LICENSE.txt). If you are illiterate [there is a summary with colorful symbols](https://tldrlegal.com/license/do-what-the-fuck-you-want-to-but-it%27s-not-my-fault-public-license-v1-(wtfnmfpl-1.0)).
 Logo of Cards Against Humanity and its related concepts are [Creative Commons BY-NC-SA 2.0 license](https://creativecommons.org/licenses/by-nc-sa/2.0/). That means you can use, remix, and share the game for free, but you can't sell it without their permission. Please do not steal their name or they will smash you.
 
 ### Disclaimer
