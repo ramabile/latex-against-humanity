@@ -1,7 +1,10 @@
 # LaTeX Against Humanity
 
+<p align="center"><img src="example/example_180312.png?raw=true" alt="latex cards against humanity table example"></p>
+
 ```
-Give as a pretext your misanthropic friends to enjoy a cathartic night with your own deviltry!
+Give as a pretext your misanthropic friends
+to enjoy a cathartic night with your own deviltry!
 ```
 
 *LaTeX Against Humanity* is a *LaTeX* (*pdfLaTeX*-compiled) version of [**Cards Against Humanity**](https://www.cardsagainsthumanity.com/), a popular card game who has been attracting very polarized critics (either you love it or you hate it). This version provides the basics to make the ready-to-print document of your own game in three moves: download, write your own cards, compile it in one line. No crap.
@@ -41,7 +44,7 @@ By design, questions and answers are given separately. Save the file *questions.
 ### Main (*tex*)
 You are not intended to modify the main tex file. In principle, you can blindly use it. For advanced users, I explain here its structure.
 * The layout of the cards is based on the 
-*ticket*](https://ctan.org/pkg/ticket) package. A floating box is used for the text inside the card. The logo *Cards Against Humanity* is added at the footer of each card. The background of the cards is changed to either black or white if the card is a question or an answer, respectively. The question cards take an additional argument as picture ("Picture") according to the name in the csv file. These pictures (even the "None" picture) should have the same background color as the question card.
+[*ticket*](https://ctan.org/pkg/ticket) package. A floating box is used for the text inside the card. The logo *Cards Against Humanity* is added at the footer of each card. The background of the cards is changed to either black or white if the card is a question or an answer, respectively. The question cards take an additional argument as picture ("Picture") according to the name in the csv file. These pictures (even the "None" picture) should have the same background color as the question card.
 The layout is encoded as a newcommand as if it were a "function" that gets the QA switch, the text, and the picture of the card (in this respective order), and returns the card itself.
 * Each record of the csv file is fed to the card function to generate each card. The loop is done via the [*datatool*](https://ctan.org/pkg/datatool) package and runs until the end of the csv file. To compile the tex file, it is detrimental that the very first line of the csv file matches the field keyword in the text file, and there are *exactly* two separators per record.
 
@@ -62,7 +65,7 @@ To Be Implemented.
 * *\parbox* width of ticket text set automatically.
 
 ### Author
-* **Roberto Amabile** \[[ramabile](https://github.com/ramabile/)\] - *Main-levolent contributor*
+* **Roberto Amabile** \[[ramabile](https://github.com/ramabile/)\] - *Main-levolent contributor*.
 
 ### Acknowledgments
 * [Cards Against Humanity](https://www.cardsagainsthumanity.com/)
@@ -72,7 +75,8 @@ To Be Implemented.
 * GNU/Linux and the FLOSS community in its broadest sense.
 * Creative Commons and the free art community in its broadest sense.
 * The other authors of packages and programs I use.
-* **Billie Thompson** \[[PurpleBooth](https://github.com/PurpleBooth)\] and other contributors for the template of this README.md - [A template to make good README.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md)
+* **Billie Thompson** \[[PurpleBooth](https://github.com/PurpleBooth)\] and other contributors for [the template of this README.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md).
+* **Michael Mroczek** \[[michaelmroczek](https://unsplash.com/@michaelmroczek)\] for the [photo of the table](https://unsplash.com/photos/xVKEZ9wVIYM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 * What the fuck.
 * My long-running misantropic friends.
 * The maieutics.
