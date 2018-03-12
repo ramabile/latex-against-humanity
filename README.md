@@ -7,7 +7,7 @@ Give as a pretext your misanthropic friends to enjoy a cathartic night with your
 *LaTeX Against Humanity* is a *LaTeX* (*pdfLaTeX*-compiled) version of [**Cards Against Humanity**](https://www.cardsagainsthumanity.com/), a popular card game who has been attracting very polarized critics (either you love it or you hate it). This version provides the basics to make the ready-to-print document of your own game in three moves: download, write your own cards, compile it in one line. No crap.
 
 ## Quick Start
-...*a.k.a.* the *TL;DR* workflow to get the pdf for lazy people like you.
+A very short workflow for lazy people like you.
 The procedure is based on command-line interface and tested for GNU/Linux platform. Ask your favourite geeky friend if you don't get the fuck about what I am talking about before you proceed.
 * Download the archive with the button *Clone or download* or clone the git
 ```
@@ -16,7 +16,7 @@ git clone https://github.com/ramabile/latex-against-humanity
 * Create your own cards in *questions.csv* and *answers.csv* in the same folder (see **Deck**);
 * Compile the document with the following command:
 ```
-pdflatex -shell-escape against-humanity.tex
+pdflatex against-humanity.tex
 ```
 
 ## Rationale
@@ -83,7 +83,3 @@ To Be Implemented.
 ### Licensing
 This work is licensed under [WTFNMFPL-1.0](http://www.adversary.org/wp/2013/10/14/do-what-the-fuck-you-want-but-its-not-my-fault/). Full text of the licence can be found also [here](https://github.com/ramabile/latex-against-humanity/blob/master/LICENSE.txt). If you are illiterate [there is a summary with colorful symbols](https://tldrlegal.com/license/do-what-the-fuck-you-want-to-but-it%27s-not-my-fault-public-license-v1-(wtfnmfpl-1.0)).
 Logo of Cards Against Humanity and its related concepts are [Creative Commons BY-NC-SA 2.0 license](https://creativecommons.org/licenses/by-nc-sa/2.0/). That means you can use, remix, and share the game for free, but you can't sell it without their permission. Please do not steal their name or they will smash you.
-
-### Disclaimer
-The authour is antiracist, antifascist, antisexist. The game is one of my tools to understand the world by random generation of black/brown/blue/red/off-color humor paradoxes. We drown in the political correctness shit so much that we forget to see reality in its crudest face.
-You are invited to mess with me saying I am an *"unaware violence-culture bearer against minorities"* (and any of its variation). I seek for criticism, I'm fed up of approval.
