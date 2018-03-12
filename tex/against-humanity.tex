@@ -1,0 +1,111 @@
+%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+\usepackage[paperheight=30cm,paperwidth=45cm,margin=0pt]{geometry} %page layout
+\usepackage[freepin,boxed]{ticket} %card interface
+\usepackage{graphicx} %handle pictures
+\graphicspath{{img/}} %prepend folder for pictures
+\usepackage{datatool} %loop utilities
+\usepackage[utf8]{inputenc} %richer encoding
+\usepackage{ifthen} %if-then clauses
+\usepackage{xcolor} %color commands
+\usepackage{tikz} %absolute positioning
+
+%%%% COMMAND DEFINITIONS %%%%
+
+%%% CONST %%%
+%% font %%
+\renewcommand{\familydefault}{\sfdefault}
+%% black color (hacking purpose) %%
+\newcommand\blackname{black} %%% switch here black color
+%% long line %%
+% COMMENT: hack to print continuous underline.
+%   TeX is smart enough not to print colored-as-background characters.
+\newcommand\underscores{%
+    \underline{\color{\blackname}% underline following text
+        \_\_\_\_\_\_\_\_\leavevmode\xleaders\hbox{\_}\hfill\kern0pt\ % grazie ilario
+    }%
+\ } %the space here ensures next character is not underlined
+
+%%% CARD GENERIC CLASS %%%
+\newcommand{\card}[3]{%
+    \ifthenelse{#1 = 0}{\Question{#2}{#3}}{\Answer{#2}}%
+}
+\newcommand{\carddefault}{%
+        \put(12, 3){\tiny Cards Against Humanity}%
+        \put( 4, 1){\logo}%
+}
+
+\newcommand{\cardtext}[1]{%
+        \put(4,38){\parbox[t]{0.10\textwidth}{\sffamily \bfseries \flushleft #1}}
+}
+
+%%% CARD SPECIFIC TYPE %%%
+%% QUESTION %%
+% background %
+\newcommand{\Questiondefault}{%
+    \renewcommand{\ticketdefault}{\color{white}%
+        \put(0,0){\begin{tikzpicture}
+            \fill [\blackname] (0mm,0mm) rectangle (5cm,5cm);
+        \end{tikzpicture}}
+        \carddefault
+    }
+}
+% content %
+\newcommand{\Question}[2]{\Questiondefault
+    \ticket{
+        \cardtext{#1}
+        \put(26,5){\includegraphics{#2}}
+    }
+}
+
+%% ANSWER %%
+% background %
+\newcommand{\Answerdefault}{
+    \renewcommand{\ticketdefault}{%
+        \carddefault%
+    }
+}
+% content %
+\newcommand{\Answer}[1]{\Answerdefault
+    \ticket{
+        \cardtext{#1}
+    }
+}
+
+%%% PICTURES %%%
+\newcommand{\logo}{\includegraphics{logo}}
+\newcommand{\draw}{\includegraphics{draw}}
+\newcommand{\pick}{\includegraphics{pick}}
+
+%%% TICKET SETUP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ticketNumbers{9}{6}
+\unitlength=1mm
+\ticketSize{50}{50}
+\ticketDistance{0}{0} 
+\hoffset=-1cm
+\voffset=-1.35cm
+
+%%% END PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\newgeometry{margin=1cm,footskip=0pt}
+
+%\DTLsetseparator{;} %uncomment it to use semicolon as separator
+\DTLloaddb{Questions}{questions.csv}
+\DTLforeach{Questions}{\Flag=QA,\Pic=Picture,\Text=Text}{%
+    \card{\Flag}{\Text}{\Pic}%
+}
+
+\pagebreak %ensures break to separate Questions from Answers (design choice)
+
+\DTLloaddb{Answers}{answers.csv}
+\DTLforeach{Answers}{\Flag=QA,\Pic=Picture,\Text=Text}{%
+    \card{\Flag}{\Text}{\Pic}%
+}
+
+\end{document}
+
+%%% END DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
