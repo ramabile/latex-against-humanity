@@ -1,11 +1,10 @@
 # LaTeX Against Humanity
 
 <p align="center"><img src="example/example_180312.png?raw=true" alt="latex cards against humanity table example"></p>
-
-```
-Give as a pretext your misanthropic friends
-to enjoy a cathartic night with your own deviltry!
-```
+<p align="center"><i>Give as a pretext<br>
+your misanthropic friends<br>
+to enjoy a cathartic night<br>
+with your own deviltry!</i></p>
 
 *LaTeX Against Humanity* is a *LaTeX* (*pdfLaTeX*-compiled) version of [**Cards Against Humanity**](https://www.cardsagainsthumanity.com/), a popular card game who has been attracting very polarized critics (either you love it or you hate it). This version provides the basics to make the ready-to-print document of your own game in three moves: download, write your own cards, compile it in one line. No crap.
 
@@ -55,14 +54,12 @@ To edit this behaviour, you need to change your separating commas to a different
 
 ## Closing remarks
 
-### Deployment / Built With / Contributing / Versioning
-To Be Implemented.
-
 ### Improvements
 * Picture background transparency. If picture is *None*, do not print a picture at all.
 * Automatically choose either *draw* or *pick* according to the number of blank spaces in the black cards. The solution allows for third argument as optional pictures in the card. The only limit is your imagination.
 * *\hoffset* and *\voffset* distances from the border of tickets set automatically.
 * *\parbox* width of ticket text set automatically.
+* Automatic update examples (*e.g.* run pdflatex to update the pdf) when new commit is pushed.
 
 ### Author
 * **Roberto Amabile** \[[ramabile](https://github.com/ramabile/)\] - *Main-levolent contributor*.
@@ -78,10 +75,10 @@ To Be Implemented.
 * **Billie Thompson** \[[PurpleBooth](https://github.com/PurpleBooth)\] and other contributors for [the template of this README.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md).
 * **Michael Mroczek** \[[michaelmroczek](https://unsplash.com/@michaelmroczek)\] for the [photo of the table](https://unsplash.com/photos/xVKEZ9wVIYM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 * What the fuck.
-* My long-running misantropic friends.
+* My long-running misanthropic friends.
 * The maieutics.
 * The scientific materialism.
-* Bernard Mandeville is dead. Long life to zombie Mandeville.
+* Bernard Mandeville is dead. [Long life to zombie Mandeville](https://en.wikipedia.org/wiki/The_Fable_of_the_Bees).
 * The auto-hetero-directed troll inside me, getting out of my hands.
 
 ### Licensing
