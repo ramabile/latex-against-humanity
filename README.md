@@ -67,6 +67,7 @@ To edit this behaviour, you need to change your separating commas to a different
 ### Acknowledgments
 * [Cards Against Humanity](https://www.cardsagainsthumanity.com/)
 * **Ilario Gelmetti** \[[ilario](https://github.com/ilario)\] for the [inspiration](https://github.com/ilario/Cards-Against-Humanity-ITA) and part of the underscore solution in the *tex* file.
+* **Johannes P. Dürholt** \[[jduerholt](https://github.com/jduerholt)\] for the inspiration of using [*ticket*](https://ctan.org/pkg/ticket) and [*datatool*](https://ctan.org/pkg/datatool) LaTeX packages.
 * **Donald Kuhn**, TeX, its community.
 * **Leslie Lamport**, LaTeX, its community.
 * GNU/Linux and the FLOSS community in its broadest sense.
