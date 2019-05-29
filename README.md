@@ -6,7 +6,7 @@ your misanthropic friends<br>
 to enjoy a cathartic night<br>
 with your own deviltry!</i></p>
 
-*LaTeX Against Humanity* is a *LaTeX* (*pdfLaTeX*-compiled) version of [**Cards Against Humanity**](https://www.cardsagainsthumanity.com/), a popular card game who has been attracting very polarized critics (either you love it or you hate it). This version provides the basics to make the ready-to-print document of your own game in three moves: download, write your own cards, compile it in one line. No crap.
+*LaTeX Against Humanity* is a *LaTeX* (*pdfLaTeX*-compiled) version of [**Cards Against Humanity**](https://www.cardsagainsthumanity.com/), a popular card game which has been attracting very polarized critics (either you love it or you hate it). This version provides the basics to make the ready-to-print document of your own game in three moves: download, write your own cards, compile it in one line. No crap.
 
 ## Quick Start
 A very short workflow for lazy people like you.
@@ -25,7 +25,7 @@ pdflatex against-humanity.tex
 
 There exist different online versions of Cards Against Humanity. However, the most popular (according to the search engine) versions are falsely claimed to be editable, whereas actually it is a pain in the ass to modify them. The choice of LaTeX was natural to me since I use it on every day basis and - most importantly - automatically takes care of the layout ([WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG#Related_acronyms) philosophy).
 You can find several attempts on the web. I found the Italian LaTeX version by [ilario](https://github.com/ilario) most fitting my needs, yet some design choice led me to make a new tex document.
-I expressely thanks ilario since I was inspired by his works to put my version on github.
+I expressely thank ilario since I was inspired by his works to put my version on github.
 
 ## Design
 
